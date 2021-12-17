@@ -1,0 +1,35 @@
+/* *{
+    margin-top: 2vh;
+} */
+
+.row{
+    border: 1px solid black;
+    text-align: center;
+}
+.container{
+    border: 1px solid black;
+}
+h5{
+    text-align: center;
+}
+body{
+    border: 2px solid black;
+    height: 80vh;
+}
+h3{
+    text-align: center;
+    margin-top: 5vh;
+}
+.player{
+    border: 1px solid coral;
+    height: 20vh;
+}
+.computer{
+    border: 1px solid coral;
+    height: 20vh;
+}
+.update{
+    border: 1px solid coral;
+    height: 40vh;
+    margin-top: 3vh;
+}

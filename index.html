@@ -6,14 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Rock-Paper-Scissors</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="row">
+            <h3>Rock Paper Scissors</h3>
+            <h5>The first to reach 5 points Wins the Game</h5>
+            <div class="col-6">
+                <div class="player">
+                    <h4>Player</h4>
+                    <div class="player-buttons">
+                        <button class="playerRock" onclick="rockPlayer()" value="rock">Rock</button>
+                        <button class="playerPaper" onclick="paperPlayer()" value="paper">Paper</button>
+                        <button class="playerScissor"  onclick="sciPlayer()" value="scissors">Scissors</button>
+                    </div>
+                </div>
+            </div>
 
-        <srcipt src="./js/app.js">Play-here</srcipt>
+            <div class="col-6">
+                <div class="computer">
+                    <h4>Computer</h4>
+                    <div class="computer-buttons">
+                        <button class="computerRock" onclick="playRound()" value="rock">Rock</button>
+                        <button class="computerPaper" onclick="playRound()" value="paper">Paper</button>
+                        <button class="computerScissor" onclick="playRound()" value="scissors">Scissors</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="update">
+
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
+<script src="./js/app.js">Play - here</script>
 
 </html>
