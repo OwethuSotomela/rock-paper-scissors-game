@@ -6,10 +6,12 @@ var rockComputerBtn = document.querySelector(".computerRock");
 var paperComputerBtn = document.querySelector(".computerPaper");
 var scissorComputerBtn = document.querySelector(".computerScissor");
 
-// const roundNumber = 1;
-// const playerScore = 0;
-// const computerScore = 0;
-// const feedback = '';
+var playerChoice;
+
+let roundNumber = 1;
+let playerScore = 0;
+let computerScore = 0;
+let feedback = '';
 
 function computerPlay() {
     const number = Math.floor(Math.random() * 1000);
@@ -25,26 +27,29 @@ function computerPlay() {
 console.log(computerPlay())
 
 function rockPlayer() {
-    var rockPlayerBtn = document.querySelector(".playerRock").value;
-    console.log(rockPlayerBtn)
+    playerChoice = document.querySelector(".playerRock").value;
+    // console.log(rockPlayerBtn)
     // playRound(rockPlayerBtn)
+    game()
     document.querySelector(".update").innerHTML = "You Clicked Me";
 }
 
 function paperPlayer() {
-    var paperPlayerBtn = document.querySelector(".playerPaper").value;
-    console.log(paperPlayerBtn);
+    playerChoice = document.querySelector(".playerPaper").value;
+    // console.log(paperPlayerBtn);
+    game()
     document.querySelector(".update").innerHTML = "Same, You Clicked Me";
 }
 function sciPlayer() {
-    var scissorPlayerBtn = document.querySelector(".playerScissor").value;
-    console.log(scissorPlayerBtn)
+    playerChoice = document.querySelector(".playerScissor").value;
+    // console.log(scissorPlayerBtn)
+    game()
     document.querySelector(".update").innerHTML = "You Clicked Me too";
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection;
-    computerSelection = computerPlay();
+    // playerSelection = playerSelection;
+    // computerSelection = computerPlay();
 
     if (playerSelection === computerSelection) {
         feedback = "It's a tie"
@@ -56,8 +61,9 @@ function playRound(playerSelection, computerSelection) {
         (playerSelection == "scissors" && computerSelection == "paper")
 
     ) {
-        // playerScore++;
-        // roundNumber++
+        playerScore++;
+        roundNumber++
+        feedback = "Player"
 
     } else
         if (
@@ -65,10 +71,10 @@ function playRound(playerSelection, computerSelection) {
             (playerSelection == "paper" && computerSelection == "scissors") ||
             (playerSelection == "scissors" && computerSelection == "rock")
         ) {
-            // computerScore++
-            // roundNumber++
+            computerScore++
+            roundNumber++
+            feedback = "Comp"
         }
-    return "You Lose! Paper beats Rock";
 }
 
 const playerSelection = "rock";
@@ -76,8 +82,15 @@ const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
 
 function game() {
+    if (playerChoice != undefined) {
+        playRound(playerChoice, computerPlay())
+        console.log(playerScore)
+        console.log(computerScore)
+        console.log(roundNumber)
+        console.log(feedback)
+    }
+
 }
 
-console.log(game());
 
 
