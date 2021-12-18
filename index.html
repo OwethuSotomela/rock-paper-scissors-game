@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 
@@ -20,9 +21,15 @@
                 <div class="player">
                     <h4>Player</h4>
                     <div class="player-buttons">
-                        <button class="playerRock" onclick="rockPlayer()" value="rock">Rock</button>
-                        <button class="playerPaper" onclick="paperPlayer()" value="paper">Paper</button>
-                        <button class="playerScissor"  onclick="sciPlayer()" value="scissors">Scissors</button>
+                        <button class="playerRock" onclick="rockPlayer()" value="rock">
+                            <img border="0" alt="W3Schools" src="./images/r1.png" width="60" height="60">
+                        </button>
+                        <button class="playerPaper" onclick="paperPlayer()" value="paper">
+                            <img border="0" alt="W3Schools" src="./images/p1.png" width="60" height="60">
+                        </button>
+                        <button class="playerScissor" onclick="sciPlayer()" value="scissors">
+                            <img border="0" alt="W3Schools" src="./images/sci1.png" width="60" height="60">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -31,22 +38,28 @@
                 <div class="computer">
                     <h4>Computer</h4>
                     <div class="computer-buttons">
-                        <button class="computerRock" onclick="playRound()" value="rock">Rock</button>
-                        <button class="computerPaper" onclick="playRound()" value="paper">Paper</button>
-                        <button class="computerScissor" onclick="playRound()" value="scissors">Scissors</button>
+                        <button class="computerRock" onclick="playRound()" value="rock">
+                            <img border="0" alt="W3Schools" src="./images/r1.png" width="60" height="60">
+                        </button>
+                        <button class="computerPaper" onclick="playRound()" value="paper">
+                            <img border="0" alt="W3Schools" src="./images/p1.png" width="60" height="60">
+                        </button>
+                        <button class="computerScissor" onclick="playRound()" value="scissors">
+                            <img border="0" alt="W3Schools" src="./images/sci1.png" width="60" height="60">
+                        </button>
                     </div>
                 </div>
             </div>
 
             <div class="col-12">
-                <div class="update">
-
-                </div>
+                <div class="update"></div>
             </div>
-
+            <div class="col-12">
+                <div class="results"></div>
+            </div>
         </div>
     </div>
 </body>
-<script src="./js/app.js">Play - here</script>
+<script src="./js/app.js"></script>
 
 </html>

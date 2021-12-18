@@ -1,35 +1,41 @@
-/* *{
-    margin-top: 2vh;
-} */
-
 .row{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
+    margin-top: 5vh;
+
 }
 .container{
-    border: 1px solid black;
+    margin-top: 5vh;
+    /* border: 1px solid pink; */
+    
 }
 h5{
     text-align: center;
 }
 body{
-    border: 2px solid black;
-    height: 80vh;
+    border: 3px solid black;
+    border-radius: 20vh;
+    background-image: url("../images/rpsci5.jpeg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-color: #aaaa;
+    height: 100vh;
+
 }
 h3{
     text-align: center;
     margin-top: 5vh;
 }
 .player{
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     height: 20vh;
 }
 .computer{
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     height: 20vh;
 }
 .update{
-    border: 1px solid coral;
-    height: 40vh;
-    margin-top: 3vh;
+    /* border: 1px solid coral; */
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }

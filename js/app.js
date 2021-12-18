@@ -8,7 +8,7 @@ var scissorComputerBtn = document.querySelector(".computerScissor");
 
 var playerChoice;
 
-let roundNumber = 1;
+let roundNumber = 0;
 let playerScore = 0;
 let computerScore = 0;
 let feedback = '';
@@ -24,35 +24,32 @@ function computerPlay() {
     return 'scissors';
 }
 
-console.log(computerPlay())
-
 function rockPlayer() {
     playerChoice = document.querySelector(".playerRock").value;
-    // console.log(rockPlayerBtn)
-    // playRound(rockPlayerBtn)
     game()
-    document.querySelector(".update").innerHTML = "You Clicked Me";
+    console.log(document.querySelector(".results").innerHTML)
+    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".results").innerHTML = feedback;
 }
 
 function paperPlayer() {
     playerChoice = document.querySelector(".playerPaper").value;
-    // console.log(paperPlayerBtn);
     game()
-    document.querySelector(".update").innerHTML = "Same, You Clicked Me";
+    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".results").innerHTML = feedback;
 }
 function sciPlayer() {
     playerChoice = document.querySelector(".playerScissor").value;
-    // console.log(scissorPlayerBtn)
     game()
-    document.querySelector(".update").innerHTML = "You Clicked Me too";
+    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".results").innerHTML = feedback;
+
 }
 
 function playRound(playerSelection, computerSelection) {
-    // playerSelection = playerSelection;
-    // computerSelection = computerPlay();
-
     if (playerSelection === computerSelection) {
         feedback = "It's a tie"
+        roundNumber++
     }
     if (
 
@@ -63,7 +60,7 @@ function playRound(playerSelection, computerSelection) {
     ) {
         playerScore++;
         roundNumber++
-        feedback = "Player"
+        feedback = "Player Wins"
 
     } else
         if (
@@ -73,20 +70,26 @@ function playRound(playerSelection, computerSelection) {
         ) {
             computerScore++
             roundNumber++
-            feedback = "Comp"
+            feedback = "Computer Wins"
         }
-}
 
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+    if (playerScore == 5) {
+        feedback = "Congratulations, you won against the computer!";
+        document.querySelector(".results").innerHTML = "Congratulations, you won against the computer!";
+    } else {
+        if (computerScore == 5) {
+            feedback = "Congratulation, you won againts the player!"
+            document.querySelector(".results").innerHTML = "Congratulation, you won againts the player!";
+        }
+    }
+}
 
 function game() {
     if (playerChoice != undefined) {
         playRound(playerChoice, computerPlay())
+        console.log(roundNumber)
         console.log(playerScore)
         console.log(computerScore)
-        console.log(roundNumber)
         console.log(feedback)
     }
 
