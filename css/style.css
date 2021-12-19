@@ -9,6 +9,18 @@
 }
 h5{
     text-align: center;
+    text-shadow:5px 5px 10px Turquoise;
+}
+
+h3{
+    text-align: center;
+    margin-top: 5vh;
+    color: tomato;
+
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
 }
 body{
     border: 3px solid black;
@@ -18,12 +30,8 @@ body{
     background-size: cover;
     background-color: #aaaa;
     height: 100vh;
+}
 
-}
-h3{
-    text-align: center;
-    margin-top: 5vh;
-}
 .player{
     height: 20vh;
 }
@@ -35,8 +43,9 @@ h3{
 }
 .updatePlayer{
     margin-top: 10vh;
-    /* margin-bottom: 10vh; */
 }
 .updateComputer{
-    /* margin-top: 10vh; */
+}
+.results{
+    margin-top: 5vh;
 }

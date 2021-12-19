@@ -15,12 +15,15 @@
 <body>
     <div class="container">
         <div class="row">
-            <h3>Rock Paper Scissors</h3>
-            <h5>The first to reach 5 points Wins the Game</h5>
+            <h3><strong>Rock Paper Scissors</strong></h3>
+            <br>
+            <br>
+            <h5><em>The first to reach 5 points Wins the Game!!!</em></h5>
+            <br>
+            <br>
             <div class="col-5">
                 <div class="player">
-                    <h4>Player</h4>
-                    <div class="playerScore"></div>
+                    <h4><strong><em>Player</em></strong></h4>
                     <div class="player-buttons">
                         <button class="playerRock" onclick="rockPlayer()" value="rock">
                             <img border="0" alt="Rock" src="./images/mr1.jpeg" width="100" height="100">
@@ -32,18 +35,18 @@
                             <img border="0" alt="Scissor" src="./images/msci1.jpeg" width="100" height="100">
                         </button>
                     </div>
+                    <div class="playerScore">Score</div>
                 </div>
             </div>
 
             <div class="col-2">
-                <h4>Round</h4>
-                <div class="round"></div>
+                <h4><strong><em>Round</em></strong></h4>
+                <div class="round" style="color: navy;"></div>
             </div>
 
             <div class="col-5">
                 <div class="computer">
-                    <h4>Computer</h4>
-                    <div class="computerScore"></div>
+                    <h4><strong><em>Computer</em></strong></h4>
                     <div class="computer-buttons">
                         <button class="computerRock" onclick="playRound()" value="rock">
                             <img border="0" alt="Rock" src="./images/mr1.jpeg" width="100" height="100">
@@ -55,15 +58,15 @@
                             <img border="0" alt="Scissor" src="./images/msci1.jpeg" width="100" height="100">
                         </button>
                     </div>
+                    <div class="computerScore">Score</div>
                 </div>
             </div>
 
-
             <div class="col-12">
-                <div class="updatePlayer"></div>
+                <div class="updatePlayer" style="color: yellow;"></div>
             </div>
             <div class="col-12">
-                <div class="updateComputer"></div>
+                <div class="updateComputer" style="color: yellow;"></div>
             </div>
             <div class="col-12">
                 <div class="results" style="color: green;"></div>
