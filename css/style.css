@@ -1,12 +1,10 @@
 .row{
-    /* border: 1px solid black; */
     text-align: center;
     margin-top: 5vh;
 
 }
 .container{
     margin-top: 5vh;
-    /* border: 1px solid pink; */
     
 }
 h5{
@@ -14,8 +12,8 @@ h5{
 }
 body{
     border: 3px solid black;
-    border-radius: 20vh;
-    background-image: url("../images/rpsci5.jpeg");
+    border-radius: 5vh;
+    background-image: url("../images/rpsci7.jpeg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-color: #aaaa;
@@ -27,15 +25,18 @@ h3{
     margin-top: 5vh;
 }
 .player{
-    /* border: 1px solid coral; */
     height: 20vh;
 }
 .computer{
-    /* border: 1px solid coral; */
     height: 20vh;
 }
-.update{
-    /* border: 1px solid coral; */
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.round{
+    margin-top: 10vh;
+}
+.updatePlayer{
+    margin-top: 10vh;
+    /* margin-bottom: 10vh; */
+}
+.updateComputer{
+    /* margin-top: 10vh; */
 }

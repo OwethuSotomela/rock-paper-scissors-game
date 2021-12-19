@@ -17,45 +17,56 @@
         <div class="row">
             <h3>Rock Paper Scissors</h3>
             <h5>The first to reach 5 points Wins the Game</h5>
-            <div class="col-6">
+            <div class="col-5">
                 <div class="player">
                     <h4>Player</h4>
+                    <div class="playerScore"></div>
                     <div class="player-buttons">
                         <button class="playerRock" onclick="rockPlayer()" value="rock">
-                            <img border="0" alt="W3Schools" src="./images/r1.png" width="60" height="60">
+                            <img border="0" alt="Rock" src="./images/mr1.jpeg" width="100" height="100">
                         </button>
                         <button class="playerPaper" onclick="paperPlayer()" value="paper">
-                            <img border="0" alt="W3Schools" src="./images/p1.png" width="60" height="60">
+                            <img border="0" alt="Paper" src="./images/mp1.jpeg" width="100" height="100">
                         </button>
                         <button class="playerScissor" onclick="sciPlayer()" value="scissors">
-                            <img border="0" alt="W3Schools" src="./images/sci1.png" width="60" height="60">
+                            <img border="0" alt="Scissor" src="./images/msci1.jpeg" width="100" height="100">
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-2">
+                <h4>Round</h4>
+                <div class="round"></div>
+            </div>
+
+            <div class="col-5">
                 <div class="computer">
                     <h4>Computer</h4>
+                    <div class="computerScore"></div>
                     <div class="computer-buttons">
                         <button class="computerRock" onclick="playRound()" value="rock">
-                            <img border="0" alt="W3Schools" src="./images/r1.png" width="60" height="60">
+                            <img border="0" alt="Rock" src="./images/mr1.jpeg" width="100" height="100">
                         </button>
                         <button class="computerPaper" onclick="playRound()" value="paper">
-                            <img border="0" alt="W3Schools" src="./images/p1.png" width="60" height="60">
+                            <img border="0" alt="Paper" src="./images/mp1.jpeg" width="100" height="100">
                         </button>
                         <button class="computerScissor" onclick="playRound()" value="scissors">
-                            <img border="0" alt="W3Schools" src="./images/sci1.png" width="60" height="60">
+                            <img border="0" alt="Scissor" src="./images/msci1.jpeg" width="100" height="100">
                         </button>
                     </div>
                 </div>
             </div>
 
+
             <div class="col-12">
-                <div class="update"></div>
+                <div class="updatePlayer"></div>
             </div>
             <div class="col-12">
-                <div class="results"></div>
+                <div class="updateComputer"></div>
+            </div>
+            <div class="col-12">
+                <div class="results" style="color: green;"></div>
             </div>
         </div>
     </div>

@@ -24,25 +24,37 @@ function computerPlay() {
     return 'scissors';
 }
 
+
+
+function outPut() {
+    document.querySelector(".updateComputer").innerHTML = computerPlay();
+    document.querySelector(".round").innerHTML = roundNumber;
+    document.querySelector(".playerScore").innerHTML = playerScore;
+    document.querySelector(".computerScore").innerHTML = computerScore;
+}
+
 function rockPlayer() {
     playerChoice = document.querySelector(".playerRock").value;
     game()
     console.log(document.querySelector(".results").innerHTML)
-    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".updatePlayer").innerHTML = playerChoice;
     document.querySelector(".results").innerHTML = feedback;
+    outPut();
 }
 
 function paperPlayer() {
     playerChoice = document.querySelector(".playerPaper").value;
     game()
-    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".updatePlayer").innerHTML = playerChoice;
     document.querySelector(".results").innerHTML = feedback;
+    outPut();
 }
 function sciPlayer() {
     playerChoice = document.querySelector(".playerScissor").value;
     game()
-    document.querySelector(".update").innerHTML = playerChoice;
+    document.querySelector(".updatePlayer").innerHTML = playerChoice;
     document.querySelector(".results").innerHTML = feedback;
+    outPut();
 
 }
 
