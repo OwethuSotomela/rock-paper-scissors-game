@@ -1,2 +1,2 @@
 # Project: Rock-Paper-Scissors-Game
-(Rock-Paper-Scissor)[https://owethusotomela.github.io/rock-paper-scissors-game/]
+[Rock-Paper-Scissors](https://owethusotomela.github.io/rock-paper-scissors-game/)
