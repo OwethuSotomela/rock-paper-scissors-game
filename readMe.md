@@ -6,7 +6,7 @@ A fun, interactive Rock Paper Scissors game built with **HTML5**, **Tailwind CSS
 
 ## 🎮 Live Demo
 
-[Play Now](#) *(host your game and insert the link)*
+[Play Now](#) *(https://owethusotomela.github.io/rock-paper-scissors-game/)*
 
 ---
 
