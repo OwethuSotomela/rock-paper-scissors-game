@@ -34,6 +34,10 @@ A fun, interactive Rock Paper Scissors game built with **HTML5**, **Tailwind CSS
    git clone https://github.com/your-username/rock-paper-scissors.git
    cd rock-paper-scissors
    
+📜 License
+
+MIT License – free to use, modify and share.
+   
 🧑‍💻 Author
 
 [Owethu Sotomela](https://github.com/OwethuSotomela)
@@ -42,6 +46,3 @@ Founder of SotoPrime TechSolutions
 
 ⸻
 
-📜 License
-
-MIT License – free to use, modify and share.
