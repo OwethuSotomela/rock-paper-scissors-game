@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-  <div class="game-container">
-    <div class="title">Rock Paper Scissors</div>
-    <div class="subtitle">First to 5 points wins the game!</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./images/icon.png" />
+  </head>
+  <body class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white font-sans h-screen flex items-center justify-center">
+    <div class="w-full max-w-3xl bg-white/10 p-6 rounded-xl shadow-2xl text-center space-y-6">
+      <h1 class="text-4xl font-bold text-yellow-400">Rock Paper Scissors</h1>
+      <p class="text-lg text-gray-300">🎯 First to 5 points wins the game!</p>
 
-    <div class="scoreboard">
-      <div>Player: <span id="playerScore">0</span></div>
-      <div>Round: <span id="roundNumber">0</span></div>
-      <div>Computer: <span id="computerScore">0</span></div>
+      <div class="flex justify-between px-4 text-lg font-semibold text-white">
+        <div>👩 You: <span id="playerScore">0</span></div>
+        <div>🌀 Round: <span id="roundNumber">0</span></div>
+        <div>💻 Computer: <span id="computerScore">0</span></div>
+      </div>
+
+      <div class="flex justify-center gap-6">
+        <button class="choice-button group" data-choice="rock">
+          <img src="./images/mr1.jpeg" alt="Rock" class="w-24 h-24 rounded-full border-4 border-yellow-400 group-hover:scale-110 transition-all duration-300 shadow-lg"/>
+        </button>
+        <button class="choice-button group" data-choice="paper">
+          <img src="./images/mp1.jpeg" alt="Paper" class="w-24 h-24 rounded-full border-4 border-yellow-400 group-hover:scale-110 transition-all duration-300 shadow-lg"/>
+        </button>
+        <button class="choice-button group" data-choice="scissors">
+          <img src="./images/msci1.jpeg" alt="Scissors" class="w-24 h-24 rounded-full border-4 border-yellow-400 group-hover:scale-110 transition-all duration-300 shadow-lg"/>
+        </button>
+      </div>
+
+      <div id="resultMessage" class="text-xl font-bold mt-4 text-yellow-300">👊 Choose your weapon!</div>
     </div>
 
-    <div class="choices">
-      <button class="choice-button" data-choice="rock">
-        <img src="./images/mr1.jpeg" alt="Rock" />
-      </button>
-      <button class="choice-button" data-choice="paper">
-        <img src="./images/mp1.jpeg" alt="Paper" />
-      </button>
-      <button class="choice-button" data-choice="scissors">
-        <img src="./images/msci1.jpeg" alt="Scissors" />
-      </button>
-    </div>
-
-    <div class="result" id="resultMessage">Choose your weapon!</div>
-  </div>
-
-  <script src="./js/app.js"></script>
-</body>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
