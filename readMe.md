@@ -31,7 +31,7 @@ A fun, interactive Rock Paper Scissors game built with **HTML5**, **Tailwind CSS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/rock-paper-scissors.git
+   git clone https://github.com/owethusotomela/rock-paper-scissors.git
    cd rock-paper-scissors
    
 📜 License
