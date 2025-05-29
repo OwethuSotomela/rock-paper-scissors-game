@@ -1,7 +1,5 @@
 # 🪨📄✂️ Rock Paper Scissors Game
 
-[Rock-Paper-Scissors](https://owethusotomela.github.io/rock-paper-scissors-game/)
-
 A fun, interactive Rock Paper Scissors game built with **HTML5**, **Tailwind CSS**, and **Vanilla JavaScript**. First to 5 points wins!
 
 ## 🎮 Live Demo
