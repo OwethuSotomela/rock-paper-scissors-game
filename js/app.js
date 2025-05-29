@@ -25,7 +25,7 @@ function playRound(playerChoice) {
   let result = '';
 
   if (playerChoice === computerChoice) {
-    result = "It's a tie!";
+    result = "🤝 It's a tie!";
   } else if (
     (playerChoice === 'rock' && computerChoice === 'scissors') ||
     (playerChoice === 'paper' && computerChoice === 'rock') ||
@@ -61,5 +61,5 @@ function resetGame() {
   playerScore = 0;
   computerScore = 0;
   round = 0;
-  updateUI("New game started! Choose your weapon!");
+  updateUI("👊 New game started! Choose your weapon!");
 }
